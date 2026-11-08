@@ -1,0 +1,19 @@
+{
+  "name": "词光 · 雅思词汇诊断",
+  "short_name": "词光诊断",
+  "description": "先诊断雅思词汇缺口，再只学不会的：分层摸底 + 插画词卡 + 间隔复习。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#f7f6f2",
+  "theme_color": "#146b5a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

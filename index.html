@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#146b5a">
+  <meta name="description" content="分层诊断雅思词汇真实缺口，只学不会的：摸底测试 + 插画词卡 + 间隔复习，可装到 iPhone 离线使用。">
+
+  <!-- 安装到 iPhone 主屏幕 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="词光诊断">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+
+  <title>词光 · 雅思词汇诊断</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/home" aria-label="回到首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M12 2.6l2.4 6.1 6.5.5-5 4.2 1.6 6.3L12 16.2 6.5 19.7l1.6-6.3-5-4.2 6.5-.5z" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text"><b>词光</b><small>雅思诊断</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#/home" data-route="home">首页</a>
+      <a href="#/test" data-route="test">诊断</a>
+      <a href="#/study" data-route="study">学习</a>
+      <a href="#/words" data-route="words">词表</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeBtn" title="切换深浅色" aria-label="切换深浅色">◐</button>
+      <a class="icon-btn" href="#/about" title="关于与设置" aria-label="关于与设置">⚙</a>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>正在加载 7,298 个雅思词条…</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>词库、插画与发音来自 <a href="https://github.com/designfuchen/word-atlas" target="_blank" rel="noreferrer">Word Atlas contributors（词光）</a>，遵循 CC BY 4.0。本工具仅用于个人学习，词条内容由 AI 生成，可能存在错误。</p>
+    <p class="footer-links"><a href="#/about">方法与设置</a><span>·</span><a href="https://0xlei.tech/words/" target="_blank" rel="noreferrer">访问原版词光</a></p>
+  </footer>
+
+  <div id="modal" class="modal" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
